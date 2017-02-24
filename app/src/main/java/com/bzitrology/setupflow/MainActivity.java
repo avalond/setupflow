@@ -1,23 +1,25 @@
 package com.bzitrology.setupflow;
 
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+  private TabLayout mTabLayout;
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    ButterKnife.bind(this);
-  }
-  @OnClick(R.id.setupBt)
-  public void setbt(View view){
-    startActivity(new Intent(this,SetUpActivity.class));
+    mTabLayout = (TabLayout) findViewById(R.id.tablayout);
+    mTabLayout.addTab(mTabLayout.newTab().setText("Tab 4"));
+
+    mTabLayout.addTab(mTabLayout.newTab().setText("Tab 5"));
+
+    mTabLayout.addTab(mTabLayout.newTab().setText("Tab 6"));
+
+    mTabLayout.addTab(mTabLayout.newTab().setText("Tab 7"));
+
   }
 }
