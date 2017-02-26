@@ -1,5 +1,6 @@
 package com.bzitrology.setupflow.adapter;
 
+import com.bzitrology.setupflow.Fragments.MenuFragment;
 import com.bzitrology.setupflow.Fragments.PageFragment;
 
 import android.content.Context;
