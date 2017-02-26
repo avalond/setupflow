@@ -14,7 +14,8 @@ import android.widget.TextView;
  * @author by kevin.
  */
 
-public class PageFragment extends Fragment {
+public class MenuFragment extends Fragment {
+
 	public static PageFragment newInstance() {
 		PageFragment fragment = new PageFragment();
 		return fragment;
@@ -30,9 +31,9 @@ public class PageFragment extends Fragment {
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_page, container, false);
+		View view = inflater.inflate(R.layout.menu_fragment, container, false);
 		TextView textView = (TextView) view.findViewById(R.id.textView);
-		textView.setText("restaurant page");
+		textView.setText("menu page");
 		return view;
 	}
 }
