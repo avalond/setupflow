@@ -1,20 +1,22 @@
 package com.bzitrology.setupflow;
 
-import com.bzitrology.setupflow.adapter.MyFragmentPagerAdapter;
+import ernestoyaquello.com.verticalstepperform.VerticalStepperFormLayout;
+import ernestoyaquello.com.verticalstepperform.interfaces.VerticalStepperForm;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
-	private TabLayout mTabLayout;
-	private ViewPager mViewPager;
-	private MyFragmentPagerAdapter mPagerAdapter;
+public class MainActivity extends AppCompatActivity implements VerticalStepperForm {
 	private Context mContext;
+	private VerticalStepperFormLayout mVerticalStepperFormLayout;
+
+	private static final int LAYOUT_RESTAURANT_NAME = 0;
+	private static final int LAYOUT_DESCRIPTION = 1;
+	private static final int LAYOUT_PHONE = 2;
+	private static final int LAYOUT_FAX = 3;
+	private static final int LAYOUT_ADDRESS = 4;
 
 
 	@Override
@@ -23,14 +25,20 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		mContext = MainActivity.this;
-		mTabLayout = (TabLayout) findViewById(R.id.tablayout);
-		mViewPager = (ViewPager) findViewById(R.id.viewPager);
+	}
 
-		FragmentManager manager = getSupportFragmentManager();
-		mPagerAdapter = new MyFragmentPagerAdapter(manager, mContext);
-		mViewPager.setAdapter(mPagerAdapter);
-		mTabLayout.setTabTextColors(Color.GRAY, Color.BLACK);
 
-		mTabLayout.setupWithViewPager(mViewPager);
+	@Override public View createStepContentView(int stepNumber) {
+		return null;
+	}
+
+
+	@Override public void onStepOpening(int stepNumber) {
+
+	}
+
+
+	@Override public void sendData() {
+
 	}
 }
