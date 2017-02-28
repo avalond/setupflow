@@ -1,3 +1,32 @@
 <resources>
   <string name="app_name">setupflow</string>
+
+  <string name="form_hint_title">Restaurant Name </string>
+  <string name="form_hint_description">description</string>
+  <string name="error_title_min_characters">At least %1$d characters</string>
+  <string-array name="steps_titles">
+    <item>Restaurant name </item>
+    <item>Phone</item>
+    <item>Fax</item>
+    <item>Address</item>
+    <item>Description</item>
+    <item>Time</item>
+    <item>Week</item>
+  </string-array>
+
+  <string-array name="week_days">
+    <item>M</item>
+    <item>T</item>
+    <item>W</item>
+    <item>T</item>
+    <item>F</item>
+    <item>S</item>
+    <item>S</item>
+  </string-array>
+
+  <!-- We can overwrite the values of the library's strings in order to customize them -->
+  <string name="vertical_form_stepper_form_discard_question">Discard alarm?</string>
+  <string name="vertical_form_stepper_form_info_will_be_lost">All the information about this new alarm will be lost</string>
+  <string name="vertical_form_stepper_form_confirm_button">Add alarm</string>
+
 </resources>
