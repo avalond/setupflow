@@ -1,5 +1,6 @@
-package com.bzitrology.setupflow;
+package com.bzitrology.setupflow.ui;
 
+import com.bzitrology.setupflow.R;
 import ernestoyaquello.com.verticalstepperform.VerticalStepperFormLayout;
 import ernestoyaquello.com.verticalstepperform.fragments.BackConfirmationFragment;
 import ernestoyaquello.com.verticalstepperform.interfaces.VerticalStepperForm;
