@@ -9,7 +9,6 @@ import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
@@ -182,8 +181,8 @@ public class CreateRestaurantFormActivity extends AppCompatActivity implements V
 
   @Override public void sendData() {
     Log.d(TAG, "click");
-    Intent intent = new Intent(mContext, CreateDish.class);
-    startActivity(intent);
+    // Intent intent = new Intent(mContext, CreateDish.class);
+    // startActivity(intent);
   }
 
 
