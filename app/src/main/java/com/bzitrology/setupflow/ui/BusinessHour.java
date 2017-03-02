@@ -1,5 +1,6 @@
 package com.bzitrology.setupflow.ui;
 
+import com.bzitrology.setupflow.MainActivity;
 import com.bzitrology.setupflow.R;
 import com.bzitrology.setupflow.base.AbstractAdapter;
 import com.bzitrology.setupflow.utils.SpaceItemDecoration;
@@ -7,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +25,7 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by kevin.
@@ -42,6 +45,8 @@ public class BusinessHour extends AppCompatActivity {
 
   private RelativeLayout mRelativeLayout;
   private LinearLayout mLinearLayout;
+  private Button mCancelBt;
+  private Button mSaveBt;
 
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -54,6 +59,20 @@ public class BusinessHour extends AppCompatActivity {
 
     mLinearLayout = (LinearLayout) findViewById(R.id.buttonlayout);
     mLinearLayout.setVisibility(View.GONE);
+
+    mCancelBt = (Button) findViewById(R.id.cancel);
+    mCancelBt.setOnClickListener(new View.OnClickListener() {
+      @Override public void onClick(View v) {
+        Intent intent = new Intent(mContext, MainActivity.class);
+        startActivity(intent);
+      }
+    });
+    mSaveBt = (Button) findViewById(R.id.save);
+    mSaveBt.setOnClickListener(new View.OnClickListener() {
+      @Override public void onClick(View v) {
+        Toast.makeText(mContext, "Save is ok", Toast.LENGTH_SHORT).show();
+      }
+    });
 
     mServerTypeRv = (RecyclerView) findViewById(R.id.servertype);
     mGridLayoutManager = new GridLayoutManager(mContext, 4);

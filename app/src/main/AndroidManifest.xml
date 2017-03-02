@@ -15,9 +15,15 @@
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
-    <activity android:name=".ui.MainFormActivity"/>
-    <activity android:name=".ui.BusinessHour"/>
-    <activity android:name=".ui.CreateDish"/>
+    <activity
+        android:name=".ui.MainFormActivity"
+        android:label="Create Restaurant "/>
+    <activity
+        android:name=".ui.BusinessHour"
+        android:label="Business"/>
+    <activity
+        android:name=".ui.CreateDish"
+        android:label="CresteDish"/>
   </application>
 
 </manifest>

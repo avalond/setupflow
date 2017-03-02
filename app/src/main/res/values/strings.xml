@@ -25,8 +25,8 @@
   </string-array>
 
   <!-- We can overwrite the values of the library's strings in order to customize them -->
-  <string name="vertical_form_stepper_form_discard_question">Discard alarm?</string>
-  <string name="vertical_form_stepper_form_info_will_be_lost">All the information about this new alarm will be lost</string>
+  <string name="vertical_form_stepper_form_discard_question">Discard Restaurant?</string>
+  <string name="vertical_form_stepper_form_info_will_be_lost">All the information about this new Restaurant will be lost</string>
   <string name="vertical_form_stepper_form_confirm_button">Create Restaurant</string>
 
 </resources>
