@@ -1,6 +1,7 @@
 package com.bzitrology.setupflow;
 
 import com.bzitrology.setupflow.ui.BusinessHour;
+import com.bzitrology.setupflow.ui.MainFormActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     mShowFlow.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-
+        Intent intent = new Intent(MainActivity.this, MainFormActivity.class);
+        startActivity(intent);
       }
     });
 

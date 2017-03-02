@@ -1,5 +1,11 @@
 package ernestoyaquello.com.verticalstepperform;
 
+import ernestoyaquello.com.verticalstepperform.interfaces.VerticalStepperForm;
+import ernestoyaquello.com.verticalstepperform.utils.Animations;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -28,13 +34,6 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import ernestoyaquello.com.verticalstepperform.interfaces.VerticalStepperForm;
-import ernestoyaquello.com.verticalstepperform.utils.Animations;
 
 /**
  * Custom layout that implements a vertical stepper form
@@ -632,7 +631,7 @@ public class VerticalStepperFormLayout extends RelativeLayout implements View.On
 
 		disableConfirmationButton();
 
-		confirmationButton.setText(R.string.vertical_form_stepper_form_confirm_button);
+		// confirmationButton.setText(R.string.vertical_form_stepper_form_confirm_button);
 		confirmationButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {

@@ -17,6 +17,7 @@
     </activity>
     <activity android:name=".ui.MainFormActivity"/>
     <activity android:name=".ui.BusinessHour"/>
+    <activity android:name=".ui.CreateDish"/>
   </application>
 
 </manifest>
