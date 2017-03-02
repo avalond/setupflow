@@ -1,4 +1,4 @@
-package ernestoyaquello.com.verticalstepperform.utils;
+package com.bzitrology.setupflow.wiget.utils;
 
 import android.view.View;
 import android.view.WindowManager;

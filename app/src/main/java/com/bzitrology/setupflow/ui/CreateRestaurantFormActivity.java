@@ -1,9 +1,9 @@
 package com.bzitrology.setupflow.ui;
 
 import com.bzitrology.setupflow.R;
-import ernestoyaquello.com.verticalstepperform.VerticalStepperFormLayout;
-import ernestoyaquello.com.verticalstepperform.fragments.BackConfirmationFragment;
-import ernestoyaquello.com.verticalstepperform.interfaces.VerticalStepperForm;
+import com.bzitrology.setupflow.wiget.VerticalStepperFormLayout;
+import com.bzitrology.setupflow.wiget.fragments.BackConfirmationFragment;
+import com.bzitrology.setupflow.wiget.interfaces.VerticalStepperForm;
 
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
@@ -30,7 +30,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-public class MainFormActivity extends AppCompatActivity implements VerticalStepperForm {
+public class CreateRestaurantFormActivity extends AppCompatActivity implements VerticalStepperForm {
 
   // Information about the steps/fields of the form
   private static final int TITLE_STEP_NUM = 0;
@@ -40,7 +40,7 @@ public class MainFormActivity extends AppCompatActivity implements VerticalStepp
   private static final int DESCRIPTION_STEP_NUM = 4;
   private static final int TIME_STEP_NUM = 5;
   private static final int DAYS_STEP_NUM = 6;
-  private static final String TAG = MainFormActivity.class.getSimpleName();
+  private static final String TAG = CreateRestaurantFormActivity.class.getSimpleName();
 
   // Restaurant name  step
   private EditText titleEditText;
@@ -84,7 +84,7 @@ public class MainFormActivity extends AppCompatActivity implements VerticalStepp
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_vertical_stepper_form);
-    mContext = MainFormActivity.this;
+    mContext = CreateRestaurantFormActivity.this;
 
     initializeActivity();
   }
@@ -406,8 +406,7 @@ public class MainFormActivity extends AppCompatActivity implements VerticalStepp
 
     dayLayout.setTag(true);
 
-    Drawable bg = ContextCompat.getDrawable(getBaseContext(),
-        ernestoyaquello.com.verticalstepperform.R.drawable.circle_step_done);
+    Drawable bg = ContextCompat.getDrawable(getBaseContext(), R.drawable.circle_step_done);
     int colorPrimary = ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary);
     bg.setColorFilter(new PorterDuffColorFilter(colorPrimary, PorterDuff.Mode.SRC_IN));
     dayLayout.setBackground(bg);

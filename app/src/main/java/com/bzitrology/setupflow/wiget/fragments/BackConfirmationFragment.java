@@ -1,6 +1,6 @@
-package ernestoyaquello.com.verticalstepperform.fragments;
+package com.bzitrology.setupflow.wiget.fragments;
 
-import ernestoyaquello.com.verticalstepperform.R;
+import com.bzitrology.setupflow.R;
 
 import android.app.Dialog;
 import android.content.DialogInterface;

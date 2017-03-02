@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-  <ernestoyaquello.com.verticalstepperform.VerticalStepperFormLayout
+  <com.bzitrology.setupflow.wiget.VerticalStepperFormLayout
       android:id="@+id/vertical_stepper_form"
       android:layout_width="match_parent"
       android:layout_height="match_parent"

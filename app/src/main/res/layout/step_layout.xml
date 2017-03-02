@@ -39,7 +39,7 @@
         android:id="@+id/step_done"
         android:layout_width="@dimen/vertical_stepper_circle_size"
         android:layout_height="@dimen/vertical_stepper_circle_size"
-        android:src="@drawable/ic_done"
+        android:src="@mipmap/ic_done"
         android:scaleType="center"
         android:layout_alignLeft="@id/circle"
         android:layout_alignStart="@id/circle"
@@ -122,7 +122,7 @@
             android:id="@+id/error_icon"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/ic_error"
+            android:src="@mipmap/ic_error"
             android:layout_marginRight="4dp"
             android:layout_marginEnd="4dp"/>
 

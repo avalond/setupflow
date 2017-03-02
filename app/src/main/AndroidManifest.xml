@@ -16,7 +16,7 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".ui.MainFormActivity"
+        android:name=".ui.CreateRestaurantFormActivity"
         android:label="Create Restaurant "/>
     <activity
         android:name=".ui.BusinessHour"

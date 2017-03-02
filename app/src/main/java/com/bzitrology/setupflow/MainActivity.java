@@ -1,7 +1,7 @@
 package com.bzitrology.setupflow;
 
 import com.bzitrology.setupflow.ui.BusinessHour;
-import com.bzitrology.setupflow.ui.MainFormActivity;
+import com.bzitrology.setupflow.ui.CreateRestaurantFormActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     mShowFlow.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this, MainFormActivity.class);
+        Intent intent = new Intent(MainActivity.this, CreateRestaurantFormActivity.class);
         startActivity(intent);
       }
     });

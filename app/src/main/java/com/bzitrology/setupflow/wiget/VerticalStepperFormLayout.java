@@ -1,7 +1,11 @@
-package ernestoyaquello.com.verticalstepperform;
+package com.bzitrology.setupflow.wiget;
 
-import ernestoyaquello.com.verticalstepperform.interfaces.VerticalStepperForm;
-import ernestoyaquello.com.verticalstepperform.utils.Animations;
+
+import static com.bzitrology.setupflow.R.drawable.circle_step_done;
+
+import com.bzitrology.setupflow.R;
+import com.bzitrology.setupflow.wiget.interfaces.VerticalStepperForm;
+import com.bzitrology.setupflow.wiget.utils.Animations;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -683,7 +687,7 @@ public class VerticalStepperFormLayout extends RelativeLayout implements View.On
 		errorIcon.setColorFilter(errorMessageTextColor);
 
 		RelativeLayout stepHeader = (RelativeLayout) stepLayout.findViewById(R.id.step_header);
-		stepHeader.setOnClickListener(new View.OnClickListener() {
+		stepHeader.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				goToStep(stepNumber, false);
@@ -693,7 +697,7 @@ public class VerticalStepperFormLayout extends RelativeLayout implements View.On
 		AppCompatButton nextButton = (AppCompatButton) stepLayout.findViewById(R.id.next_step);
 		setButtonColor(nextButton,
 				buttonBackgroundColor, buttonTextColor, buttonPressedBackgroundColor, buttonPressedTextColor);
-		nextButton.setOnClickListener(new View.OnClickListener() {
+		nextButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				goToStep((stepNumber + 1), false);
@@ -1021,7 +1025,7 @@ public class VerticalStepperFormLayout extends RelativeLayout implements View.On
 
 	protected void setStepCircleBackgroundColor(LinearLayout stepLayout, int color) {
 		LinearLayout circle = (LinearLayout) stepLayout.findViewById(R.id.circle);
-		Drawable bg = ContextCompat.getDrawable(context, R.drawable.circle_step_done);
+		Drawable bg = ContextCompat.getDrawable(context, circle_step_done);
 		bg.setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_IN));
 		circle.setBackground(bg);
 	}

@@ -28,4 +28,14 @@
   <string name="vertical_form_stepper_form_discard_question">Discard Restaurant?</string>
   <string name="vertical_form_stepper_form_info_will_be_lost">All the information about this new Restaurant will be lost</string>
 
+
+  <string name="vertical_form_stepper_form_continue">Continue</string>
+  <string name="vertical_form_stepper_form_discard_cancel">Cancel</string>
+  <string name="vertical_form_stepper_form_discard">Discard</string>
+  <!--<string name="vertical_form_stepper_form_confirm_button">Confirm data</string>-->
+  <string name="vertical_form_stepper_form_last_step">Confirmation</string>
+
+  <string name="vertical_form_stepper_form_down_previous">down_previous</string>
+  <string name="vertical_form_stepper_form_down_next">down_next</string>
+
 </resources>
